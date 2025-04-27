@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoogwerker Huren Drachten | Tijdelijk 10% Korting</title>
     <meta name="description" content="Huur nu een hoogwerker in Drachten met 10% korting. Professionele service en snelle levering.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased bg-gray-50">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">Hoogwerker Drachten</a>
+                    <a href="https://readthisnow.github.io/hoogwerker-huren-drachten-2025-04-27-vfiam" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">Hoogwerker Drachten</a>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Diensten</a>
                     <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Reviews</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div x-show="isOpen" class="md:hidden mt-4" @click.away="isOpen = false">
+            <div class="mobile-menu hidden md:hidden mt-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="#features" class="text-gray-600 hover:text-blue-600">Diensten</a>
-                    <a href="#benefits" class="text-gray-600 hover:text-blue-600">Voordelen</a>
-                    <a href="#faq" class="text-gray-600 hover:text-blue-600">FAQ</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Diensten</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Reviews</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
             </div>
         </nav>
@@ -43,10 +54,10 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                        Hoogwerker Huren Drachten
+                        Professionele Hoogwerker Verhuur in Drachten
                     </h1>
                     <p class="text-xl md:text-2xl text-blue-600 font-semibold mb-8">
-                        Tijdelijk 10% Korting op Alle Hoogwerkers!
+                        Tijdelijk 10% Korting op Ons Complete Assortiment Hoogwerkers!
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="https://hansschuiling.nl" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
@@ -56,9 +67,9 @@
                             Meer Informatie
                         </a>
                     </div>
-                    <div class="mt-8 p-4 bg-yellow-100 rounded-lg inline-block">
+                    <div class="mt-8 p-4 bg-yellow-100 rounded-lg inline-block transform hover:scale-102 transition-transform duration-300">
                         <p class="text-yellow-800 font-medium">
-                            🔥 Nog maar 3 hoogwerkers beschikbaar voor dit weekend!
+                            🔥 Nog maar 3 hoogwerkers beschikbaar voor dit weekend! Reserveer snel.
                         </p>
                     </div>
                 </div>
@@ -68,19 +79,38 @@
         <section id="features" class="py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-                    Onze Diensten
+                    Onze Uitgebreide Diensten
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Snelle Levering</h3>
-                        <p class="text-gray-600">Binnen 24 uur geleverd in heel Drachten en omgeving</p>
+                        <h3 class="text-xl font-semibold mb-4">Express Levering</h3>
+                        <p class="text-gray-600">Gegarandeerde levering binnen 24 uur in Drachten en omgeving. Inclusief technische ondersteuning en veiligheidsinstructies.</p>
                     </div>
-                    <!-- More feature cards... -->
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Flexibele Huurtermijnen</h3>
+                        <p class="text-gray-600">Van dagverhuur tot langetermijnprojecten. Altijd een passende oplossing voor uw specifieke behoeften.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Gecertificeerde Veiligheid</h3>
+                        <p class="text-gray-600">Alle hoogwerkers zijn VCA-gecertificeerd en worden regelmatig gekeurd. Inclusief verzekering en veiligheidscertificaten.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,10 +118,94 @@
         <section id="benefits" class="py-24 bg-gray-50">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-                    Waarom Kiezen voor Ons?
+                    Waarom Kiezen voor Onze Service?
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <!-- Benefits content... -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">Uitgebreide Vloot</h3>
+                        <p class="text-gray-600">Van schaarliften tot telescoophoogwerkers, wij hebben voor elke klus de juiste machine. Alle modellen zijn recent en perfect onderhouden.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                        <p class="text-gray-600">Onze technische experts staan dag en nacht voor u klaar. Bij storingen zijn we binnen 2 uur ter plaatse om u te helpen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
+                    Wat Onze Klanten Zeggen
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Snelle levering en uitstekende service. De hoogwerker was in perfecte staat en het team was zeer behulpzaam bij de instructies."</p>
+                        <p class="font-semibold">Jan de Vries</p>
+                        <p class="text-sm text-gray-500">Bouwbedrijf De Vries</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Al jaren vaste klant. De flexibiliteit in huurtermijnen en de professionele aanpak maken het verschil."</p>
+                        <p class="font-semibold">Peter Bakker</p>
+                        <p class="text-sm text-gray-500">Schildersbedrijf Bakker</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Betrouwbare partner voor al onze hoogwerker behoeften. De 24/7 support is een echte uitkomst bij spoedklussen."</p>
+                        <p class="font-semibold">Lisa Jansen</p>
+                        <p class="text-sm text-gray-500">Facilitair Manager, Kantoorgebouw Centrum</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Uitstekende prijs-kwaliteitverhouding en zeer professionele dienstverlening. Een aanrader!"</p>
+                        <p class="font-semibold">Mark de Boer</p>
+                        <p class="text-sm text-gray-500">Installatiebedrijf De Boer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
+                    Over Ons
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-600 leading-relaxed">
+                        Opgericht in 2010 door een team van ervaren professionals in de hoogwerkerverhuur, is ons bedrijf uitgegroeid tot de toonaangevende specialist in Drachten en omstreken. Met meer dan 13 jaar ervaring in de branche hebben we een reputatie opgebouwd als betrouwbare partner voor zowel particuliere als zakelijke klanten.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Onze missie is om veilige, efficiënte en betaalbare hoogwerkeroplossingen te bieden, ondersteund door uitstekende klantenservice. We geloven in transparantie, kwaliteit en duurzaamheid, en investeren continu in de nieuwste en meest milieuvriendelijke machines om aan de evoluerendebehoeften van onze klanten te voldoen.
+                    </p>
                 </div>
             </div>
         </section>
@@ -102,19 +216,42 @@
                     Veelgestelde Vragen
                 </h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <!-- FAQ items... -->
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Wat zijn de huurtarieven?</h3>
+                        <p class="text-gray-600">Onze tarieven beginnen vanaf €150 per dag, afhankelijk van het type hoogwerker en de huurtermijn. Langere periodes geven recht op aantrekkelijke kortingen. Neem contact op voor een persoonlijke offerte.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Is er een verzekering inbegrepen?</h3>
+                        <p class="text-gray-600">Ja, al onze hoogwerkers zijn volledig verzekerd. De basisdekking is inbegrepen in de huurprijs. Optioneel kunt u kiezen voor een uitgebreide dekking tegen een kleine meerprijs.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Heb ik een certificaat nodig?</h3>
+                        <p class="text-gray-600">Voor professioneel gebruik is een hoogwerkercertificaat verplicht. Wij bieden ook certificeringscursussen aan. Voor particulier gebruik geven wij een uitgebreide instructie.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Wat is het leveringsgebied?</h3>
+                        <p class="text-gray-600">Wij leveren in Drachten en een straal van 50 kilometer daaromheen. Levering binnen dit gebied is gratis bij huur langer dan een dag.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Wat bij technische problemen?</h3>
+                        <p class="text-gray-600">Onze 24/7 technische dienst staat voor u klaar. Bij storingen zijn we binnen 2 uur ter plaatse of zorgen we voor een vervangende machine.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 bg-blue-600">
+        <section id="contact" class="py-24 bg-blue-600" style="background-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'); background-blend-mode: overlay;">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
                         Klaar om een Hoogwerker te Huren?
                     </h2>
                     <p class="text-xl text-blue-100 mb-12">
-                        Profiteer nu van 10% korting op alle verhuur
+                        Profiteer nu van 10% korting op alle verhuur en ontvang gratis technische ondersteuning
                     </p>
                     <a href="https://hansschuiling.nl" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-lg shadow-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300">
                         Direct Reserveren
@@ -129,14 +266,68 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p class="mb-2">support@example.com</p>
+                    <p class="mb-2">Tel: 0512-123456</p>
+                    <p class="mb-2">Email: info@hoogwerkerdrachten.nl</p>
+                    <p>Industrieweg 1, Drachten</p>
                 </div>
-                <!-- More footer columns... -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://readthisnow.github.io/hoogwerker-huren-drachten-2025-04-27-vfiam/blog.html" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://readthisnow.github.io/hoogwerker-huren-drachten-2025-04-27-vfiam/privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/hoogwerker-huren-drachten-2025-04-27-vfiam/terms.html" class="hover:text-blue-400 transition-colors duration-300">Algemene Voorwaarden</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Openingstijden</h3>
+                    <p class="mb-2">Ma-Vr: 07:00 - 18:00</p>
+                    <p class="mb-2">Za: 08:00 - 16:00</p>
+                    <p>Zo: Gesloten</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Volg Ons</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-800 text-center">
                 <p class="text-gray-400">&copy; 2024 Hoogwerker Huren Drachten. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
